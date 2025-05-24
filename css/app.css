@@ -40,7 +40,6 @@ h3 {
   }
 }
 
-/** Reescribir colores **/
 .text-primary,
 .nombre-sitio {
   color: #037BC0 !important;
@@ -86,7 +85,6 @@ h3 {
   }
 }
 
-/** Productos **/
 @media (min-width: 768px) {
   .producto img {
     height: 45rem;
@@ -95,8 +93,7 @@ h3 {
   }
 }
 .categoria img {
-  transition-property: transform;
-  transition-duration: 300ms;
+  transition: transform 300ms ease;
 }
 .categoria img:hover {
   transform: scale(1.2);
@@ -107,7 +104,7 @@ h3 {
   overflow: hidden;
 }
 .galeria li img {
-  transition: transform 0.3s ease;
+  transition: transform 300ms ease;
 }
 .galeria li img:hover {
   transform: scale(1.2);

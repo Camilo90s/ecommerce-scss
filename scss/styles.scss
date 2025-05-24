@@ -2,6 +2,40 @@
 $bs-blue: #037BC0;
 $bs-green: #8CBC00;
 
+// Mixins
+@mixin heading($font-size-mobile, $font-size-desktop) {
+  font-size: $font-size-mobile;
+
+  @media (min-width: 768px) {
+    font-size: $font-size-desktop;
+  }
+}
+
+@mixin hover-efecto {
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #2e7d32;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@mixin img-hover-zoom($scale: 1.2, $duration: 300ms) {
+  transition: transform $duration ease;
+
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+@mixin producto-img($height) {
+  height: $height;
+  width: 100%;
+  object-fit: cover;
+}
+
+// Estilos base
 html {
   font-size: 62.5%;
 }
@@ -18,30 +52,18 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.8rem;
-
-  @media (min-width: 768px) {
-    font-size: 5rem;
-  }
+  @include heading(3.8rem, 5rem);
 }
 
 h2 {
-  font-size: 3.2rem;
-
-  @media (min-width: 768px) {
-    font-size: 4rem;
-  }
+  @include heading(3.2rem, 4rem);
 }
 
 h3 {
-  font-size: 2.4rem;
-
-  @media (min-width: 768px) {
-    font-size: 3rem;
-  }
+  @include heading(2.4rem, 3rem);
 }
 
-/** Reescribir colores **/
+// Reescribir colores
 .text-primary,
 .nombre-sitio {
   color: $bs-blue !important;
@@ -52,26 +74,14 @@ h3 {
 
   &.card,
   &.main-product {
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: #2e7d32;
-      transform: translateY(-3px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+    @include hover-efecto;
   }
 }
 
 .card,
 .main-product {
   .btn-success {
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: #2e7d32;
-      transform: translateY(-3px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+    @include hover-efecto;
   }
 }
 
@@ -80,6 +90,7 @@ h3 {
   background-color: $bs-blue !important;
 }
 
+// Hero
 .hero {
   background-image: url(../img/principal.jpg);
   height: 25rem;
@@ -91,43 +102,35 @@ h3 {
   }
 }
 
-/** Productos **/
+// Productos
 @media (min-width: 768px) {
   .producto {
     img {
-      height: 45rem;
-      width: 100%;
-      object-fit: cover;
+      @include producto-img(45rem);
     }
   }
 }
 
+// Categoría
 .categoria {
   img {
-    transition-property: transform;
-    transition-duration: 300ms;
-
-    &:hover {
-      transform: scale(1.2);
-    }
+    @include img-hover-zoom;
   }
 }
 
+// Galería
 .galeria {
   li {
     margin-bottom: 1rem;
     overflow: hidden;
 
     img {
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.2);
-      }
+      @include img-hover-zoom;
     }
   }
 }
 
+// Formulario
 .form-control {
   padding: 1rem;
   font-size: 1.6rem;
