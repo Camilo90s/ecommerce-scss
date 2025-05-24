@@ -1,0 +1,134 @@
+// Variables SCSS
+$bs-blue: #037BC0;
+$bs-green: #8CBC00;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair", serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3.8rem;
+
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+/** Reescribir colores **/
+.text-primary,
+.nombre-sitio {
+  color: $bs-blue !important;
+}
+
+.btn-success {
+  background-color: $bs-green !important;
+
+  &.card,
+  &.main-product {
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #2e7d32;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.card,
+.main-product {
+  .btn-success {
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #2e7d32;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: $bs-blue !important;
+}
+
+.hero {
+  background-image: url(../img/principal.jpg);
+  height: 25rem;
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-width: 768px) {
+    height: 55rem;
+  }
+}
+
+/** Productos **/
+@media (min-width: 768px) {
+  .producto {
+    img {
+      height: 45rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.categoria {
+  img {
+    transition-property: transform;
+    transition-duration: 300ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.galeria {
+  li {
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    img {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.form-control {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
