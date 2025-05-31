@@ -17,7 +17,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -26,68 +30,163 @@
   </head>
   <body>
     <header class="py-5 d-none d-lg-block">
-      <h1 class="text-center" data-aos="fade-up" data-aos-duration="500">
-        Tienda <span class="text-primary">Muebles</span>
+      <h1
+        class="text-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
+        Tienda
+        <span class="text-primary">Muebles</span>
       </h1>
     </header>
 
-    <div class="border-top py-4" data-aos="fade-up" data-aos-duration="500">
+    <div
+      class="border-top py-4"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="200"
+    >
       <div class="navbar navbar-expand-lg container navbar-light">
-        <a class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase" href="index.html">Tienda Muebles</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion" aria-label="Abrir menú de navegación">
+        <a
+          class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase"
+          href="index.html"
+          >Tienda Muebles</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navegacion"
+          aria-label="Abrir menú de navegación"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div id="navegacion" class="collapse navbar-collapse">
-          <nav class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center">
-            <a class="text-dark text-decoration-none" href="index.html">Inicio</a>
-            <a class="text-dark text-decoration-none" href="pages/nosotros.html">Nosotros</a>
-            <a class="text-dark text-decoration-none" href="pages/tienda.html">Tienda</a>
-            <a class="text-dark text-decoration-none" href="pages/blog.html">Blog</a>
-            <a class="text-dark text-decoration-none" href="pages/galeria.html">Galería</a>
-            <a class="text-dark text-decoration-none" href="pages/contacto.html">Contacto</a>
+          <nav
+            class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center"
+          >
+            <a class="text-dark text-decoration-none" href="index.html"
+              >Inicio</a
+            >
+            <a class="text-dark text-decoration-none" href="pages/nosotros.html"
+              >Nosotros</a
+            >
+            <a class="text-dark text-decoration-none" href="pages/tienda.html"
+              >Tienda</a
+            >
+            <a class="text-dark text-decoration-none" href="pages/blog.html"
+              >Blog</a
+            >
+            <a class="text-dark text-decoration-none" href="pages/galeria.html"
+              >Galería</a
+            >
+            <a class="text-dark text-decoration-none" href="pages/contacto.html"
+              >Contacto</a
+            >
           </nav>
         </div>
       </div>
     </div>
 
-    <div class="hero" data-aos="fade-up" data-aos-duration="500"></div>
+    <div
+      class="hero"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="300"
+    ></div>
 
     <main class="container-xl py-5">
-      <h2 class="text-center my-5" data-aos="fade-up" data-aos-duration="500">Nuestros Productos</h2>
+      <h2
+        class="text-center my-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+      >
+        Nuestros Productos
+      </h2>
 
-      <div class="row g-0 pt-5 mb-4 main-product" data-aos="fade-up" data-aos-duration="600">
+      <div
+        class="row g-0 pt-5 mb-4 main-product"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="400"
+      >
         <div class="col-md-8 producto">
-          <img src="img/producto1.avif" alt="Gabetero de madera..." class="img-fluid" />
+          <img
+            src="img/producto1.avif"
+            alt="Gabetero de madera claro con bordes oscuros junto a una silla acolchada azul, sobre un piso de madera clara"
+            class="img-fluid"
+          />
         </div>
-        <div class="col-md-4 bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+
+        <div
+          class="col-md-4 bg-primary text-center p-5 text-white d-flex flex-column justify-content-center"
+        >
           <h3>Combo Nordic Relax</h3>
-          <p>Gabetero escandinavo y silla azul acolchada...</p>
+          <p>
+            Gabetero escandinavo y silla azul acolchada, una combinación
+            perfecta de estilo y confort para cualquier espacio.
+          </p>
           <p class="fs-1 fw-bold">$85 USD</p>
-          <a class="btn btn-success fs-3 fw-bold py-3" href="#">Agregar al carrito</a>
+          <a class="btn btn-success fs-3 fw-bold py-3" href="#"
+            >Agregar al carrito</a
+          >
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-6 mb-4">
-          <div class="card" data-aos="fade-up" data-aos-duration="400">
-            <img src="img/producto2.avif" alt="Sofá en L..." class="img-fluid" />
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <img
+              src="img/producto2.avif"
+              alt="Sofá en L color café oscuro, moderno y amplio, ubicado en una sala acogedora con decoración cálida"
+              class="img-fluid"
+            />
+
             <div class="card-body text-center bg-primary text-white p-5">
               <h3>Sofá Esencia Café</h3>
-              <p>Sofá en L tapizado en café...</p>
+              <p>
+                Sofá en L tapizado en café, perfecto para crear un ambiente
+                cálido, moderno y acogedor en tu sala
+              </p>
               <p class="fs-1 fw-bold">$49 USD</p>
-              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#">Agregar al carrito</a>
+              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#"
+                >Agregar al carrito</a
+              >
             </div>
           </div>
         </div>
 
         <div class="col-md-6 mb-4">
-          <div class="card" data-aos="fade-up" data-aos-duration="400">
-            <img src="img/producto3.avif" alt="Sofá gris claro..." class="img-fluid" />
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="img/producto3.avif"
+              alt="Sofá gris claro de tres puestos con cojines decorativos, ubicado frente a una ventana con cortinas claras"
+              class="img-fluid"
+            />
+
             <div class="card-body text-center bg-primary text-white p-5">
               <h3>Sofá Brisa Urbana</h3>
-              <p>Sofá gris claro de tres puestos...</p>
+              <p>
+                Sofá gris claro de tres puestos con respaldo capitoné, ideal
+                para ambientes luminosos y acogedores.
+              </p>
               <p class="fs-1 fw-bold">$55 USD</p>
-              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#">Agregar al carrito</a>
+              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#"
+                >Agregar al carrito</a
+              >
             </div>
           </div>
         </div>
@@ -95,37 +194,85 @@
 
       <div class="row">
         <div class="col-md-4 mb-4">
-          <div class="card" data-aos="fade-up" data-aos-duration="400">
-            <img src="img/producto4.avif" alt="Comedor moderno..." class="img-fluid" />
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <img
+              src="img/producto4.avif"
+              alt="Comedor moderno con mesa redonda blanca y dos sillas negras de madera"
+              class="img-fluid"
+            />
+
             <div class="card-body text-center bg-primary text-white p-5">
               <h3>Comedor Línea Moderna</h3>
-              <p>Diseño minimalista y funcional...</p>
+              <p>
+                Diseño minimalista y funcional. Mesa redonda blanca con base
+                central y dos sillas negras de madera curvada, ideal para
+                espacios acogedores.
+              </p>
               <p class="fs-1 fw-bold">$68 USD</p>
-              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#">Agregar al carrito</a>
+              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#"
+                >Agregar al carrito</a
+              >
             </div>
           </div>
         </div>
 
         <div class="col-md-4 mb-4">
-          <div class="card" data-aos="fade-up" data-aos-duration="400">
-            <img src="img/producto5.avif" alt="Cama tapizada..." class="img-fluid" />
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="img/producto5.avif"
+              alt="Cama tapizada en tela gris con cabecero acolchado y nochero de madera con dos cajones"
+              class="img-fluid"
+            />
+
             <div class="card-body text-center bg-primary text-white p-5">
               <h3>Combo Descanso Lujoso</h3>
-              <p>Cama tapizada en gris con cabecero...</p>
+              <p>
+                Cama tapizada en gris con cabecero acolchado y nochero de madera
+                de dos cajones. Diseño moderno, sobrio y funcional para espacios
+                contemporáneos.
+              </p>
               <p class="fs-1 fw-bold">$110 USD</p>
-              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#">Agregar al carrito</a>
+              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#"
+                >Agregar al carrito</a
+              >
             </div>
           </div>
         </div>
 
         <div class="col-md-4 mb-4">
-          <div class="card" data-aos="fade-up" data-aos-duration="400">
-            <img src="img/producto6.avif" alt="Cama sin cabecero..." class="img-fluid" />
+          <div
+            class="card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <img
+              src="img/producto6.avif"
+              alt="Cama sin cabecero con estantes flotantes blancos integrados a cada lado, diseño minimalista y moderno en ambiente cálido"
+              class="img-fluid"
+            />
+
             <div class="card-body text-center bg-primary text-white p-5">
               <h3>Línea Flotante Zen</h3>
-              <p>Cama moderna sin cabecero con estantes flotantes...</p>
+              <p>
+                Cama moderna sin cabecero con estantes flotantes laterales en
+                blanco. Un diseño minimalista y funcional que resalta la calidez
+                del entorno.
+              </p>
               <p class="fs-1 fw-bold">$95 USD</p>
-              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#">Agregar al carrito</a>
+              <a class="btn btn-success fs-3 fw-bold py-3 w-100" href="#"
+                >Agregar al carrito</a
+              >
             </div>
           </div>
         </div>
@@ -133,27 +280,77 @@
     </main>
 
     <section class="container-xl">
-      <h2 class="text-center py-5" data-aos="fade-up" data-aos-duration="500">Categorías Principales</h2>
+      <h2
+        class="text-center py-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+      >
+        Categorias Principales
+      </h2>
+
       <div class="row mt-5">
-        <div class="col-md-4 categoria" data-aos="fade-up" data-aos-duration="400">
+        <div
+          class="col-md-4 categoria"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <div class="overflow-hidden">
-            <img src="img/categoria1.avif" alt="Sala acogedora..." class="img-fluid" />
+            <img
+              src="img/categoria1.avif"
+              alt="Sala acogedora con sofá en L color marrón, cojines decorativos, mesa de madera, plantas y pared blanca con reloj antiguo"
+              class="img-fluid"
+            />
           </div>
-          <a class="text-dark fs-2 text-decoration-none text-center d-block py-3" href="#">Oficina</a>
+
+          <a
+            class="text-dark fs-2 text-decoration-none text-center d-block py-3"
+            href="#"
+            >Oficina</a
+          >
         </div>
 
-        <div class="col-md-4 categoria" data-aos="fade-up" data-aos-duration="400">
+        <div
+          class="col-md-4 categoria"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
           <div class="overflow-hidden">
-            <img src="img/categoria2.avif" alt="Oficina minimalista..." class="img-fluid" />
+            <img
+              src="img/categoria2.avif"
+              alt="Oficina minimalista con escritorio en L, silla gris, lámpara de mesa, portátil cerrado y decoración sencilla"
+              class="img-fluid"
+            />
           </div>
-          <a class="text-dark fs-2 text-decoration-none text-center d-block py-3" href="#">Hogar</a>
+
+          <a
+            class="text-dark fs-2 text-decoration-none text-center d-block py-3"
+            href="#"
+            >Hogar</a
+          >
         </div>
 
-        <div class="col-md-4 categoria" data-aos="fade-up" data-aos-duration="400">
+        <div
+          class="col-md-4 categoria"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
           <div class="overflow-hidden">
-            <img src="img/categoria3.avif" alt="Sala de reuniones moderna..." class="img-fluid" />
+            <img
+              src="img/categoria3.avif"
+              alt="Sala de reuniones moderna con mesa blanca rectangular, ocho sillas grises, plantas decorativas y ventanales de marco negro"
+              class="img-fluid"
+            />
           </div>
-          <a class="text-dark fs-2 text-decoration-none text-center d-block py-3" href="#">Cocina</a>
+
+          <a
+            class="text-dark fs-2 text-decoration-none text-center d-block py-3"
+            href="#"
+            >Cocina</a
+          >
         </div>
       </div>
     </section>
@@ -163,6 +360,7 @@
         <div class="row">
           <div class="col-md-4 mb-4 text-center">
             <h3 class="mb-4">Categorías</h3>
+
             <nav class="d-flex flex-column">
               <a class="text-dark text-decoration-none" href="#">Cocina</a>
               <a class="text-dark text-decoration-none" href="#">Oficina</a>
@@ -174,21 +372,37 @@
 
           <div class="col-md-4 mb-4 text-center">
             <h3 class="mb-4">Sobre Nosotros</h3>
+
             <nav class="d-flex flex-column">
-              <a class="text-dark text-decoration-none" href="#">Nuestra historia</a>
-              <a class="text-dark text-decoration-none" href="#">Misión, visión y valores</a>
+              <a class="text-dark text-decoration-none" href="#"
+                >Nuestra historia</a
+              >
+              <a class="text-dark text-decoration-none" href="#"
+                >Mision, vision y valores</a
+              >
               <a class="text-dark text-decoration-none" href="#">Carreras</a>
-              <a class="text-dark text-decoration-none" href="#">Política de privacidad</a>
-              <a class="text-dark text-decoration-none" href="#">Términos del servicio</a>
+              <a class="text-dark text-decoration-none" href="#"
+                >Política de privacidad</a
+              >
+              <a class="text-dark text-decoration-none" href="#"
+                >Términos del servicio</a
+              >
             </nav>
           </div>
 
           <div class="col-md-4 mb-4 text-center">
             <h3 class="mb-4">Soporte</h3>
+
             <nav class="d-flex flex-column">
-              <a class="text-dark text-decoration-none" href="#">Preguntas frecuentes</a>
-              <a class="text-dark text-decoration-none" href="#">Ayuda en línea</a>
-              <a class="text-dark text-decoration-none" href="#">Confianza y seguridad</a>
+              <a class="text-dark text-decoration-none" href="#"
+                >Preguntas frecuentes</a
+              >
+              <a class="text-dark text-decoration-none" href="#"
+                >Ayuda en línea</a
+              >
+              <a class="text-dark text-decoration-none" href="#"
+                >Confianza y seguridad</a
+              >
             </nav>
           </div>
         </div>
@@ -199,7 +413,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-      AOS.init({ duration: 500, once: true });
+      AOS.init();
     </script>
   </body>
 </html>
